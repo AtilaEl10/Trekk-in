@@ -1,0 +1,13 @@
+button {
+    background-color: $ball-blue;
+    color: $white;
+    border: none;
+}
+
+button:hover {
+    background-color: $middle-blue;
+}
+
+button:focus {
+    background-color: $silver-chalice;
+}
