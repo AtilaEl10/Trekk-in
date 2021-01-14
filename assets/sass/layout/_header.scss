@@ -1,0 +1,23 @@
+.header {
+    margin-top: 20px;
+    &__texto {
+        margin: 50px 90px 0;
+        width: 30%;
+        position: absolute;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .header {
+        &__texto {
+            width: 45%;
+            position: static;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+}

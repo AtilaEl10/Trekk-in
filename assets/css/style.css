@@ -9910,12 +9910,13 @@ body {
   color: #221D23;
 }
 
-p {
-  font-family: "Open Sans", sans-serif;
+h1 {
+  font-weight: 700;
+  font-size: 40px;
 }
 
-body {
-  margin: 10px 90px 0;
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 a:link {
@@ -9930,8 +9931,26 @@ a:active {
 
 body {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-gap: 15px;
 }
 
+.header {
+  margin-top: 20px;
+}
+.header__texto {
+  margin: 50px 90px 0;
+  width: 30%;
+  position: absolute;
+}
+
+@media (max-width: 900px) {
+  .header__texto {
+    width: 45%;
+    position: static;
+  }
+}
 button {
   background-color: #2AB7CA;
   color: #FFF;
@@ -9944,9 +9963,11 @@ button:hover {
 
 button:focus {
   background-color: #AEACAF;
+  outline: none;
 }
 
 .nav {
+  margin: 10px 90px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9979,7 +10000,6 @@ button:focus {
 .nav__button-primary {
   padding: 5px 15px;
   font-weight: 700;
-  letter-spacing: 1.3px;
 }
 
 /*# sourceMappingURL=style.css.map */

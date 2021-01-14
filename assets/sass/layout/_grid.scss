@@ -1,4 +1,6 @@
 body {
     display: grid;
-    
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 15px;    
 }
