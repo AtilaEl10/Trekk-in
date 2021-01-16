@@ -1,6 +1,8 @@
 .main-section {
-    margin: 0 90px 0;
+    margin: 0 60px 0;
     h2 {
+        font-weight: $bold;
+        font-size: $xx-large;
         text-align: center;
         margin-bottom: 60px;
     }
@@ -12,10 +14,46 @@
             width: 35%;
 
         }
+        h3 {
+            font-weight: $bold;
+            font-size: $x-large;   
+        }
         p {
             font-family: $open-sans;
             font-size: $small;
         }
     }
 
+}
+
+@media (max-width: 900px) {
+    .main-section {
+        margin: 0 40px 0;
+    }
+}
+
+@media (max-width: 764px) {
+    .main-section {
+        h2 {
+            font-size: $xxx-large;
+            margin: 60px auto;
+        }
+        &__content {
+            display: inline;
+            text-align: center;
+            div {
+                width: 80%;
+                margin: 40px auto;
+            }
+            h3 {
+                font-size: $large; 
+                text-align: left;
+  
+            }
+            p {
+                font-size: $medium;
+                text-align: left;
+            }
+        }
+    }
 }

@@ -1,16 +1,27 @@
 .form {
     background-image: url(../img/bg-price.svg);
     background-repeat: no-repeat;
-    background-position: cover;
-    h3 {
+    background-position: center;
+    background-size: cover;
+    h2 {
         text-align: center;
         margin-top: 200px;
+        font-weight: $bold;
+        font-size: $x-large; 
         color: $white;
     }
     &__cards {
-        display: flex;
-        justify-content: space-evenly;
+
         margin-top: 50px;
         margin-bottom: 50px;   
+    }
+}
+
+@media (max-width: 764px) {
+    .form {
+        background-position: left;
+        h2 {
+            font-size: $xx-large; 
+        }
     }
 }

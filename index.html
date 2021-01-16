@@ -31,6 +31,18 @@
                 <a href="#">Iniciar Sesión</a>
                 <button class="nav__button-primary">Registrate</button>
             </div>
+            <div  class="nav__menu">
+                <div id='slide_nav'>
+                    <p id="slide_nav_button">☰</p>
+                </div>
+                <ul id='slide_menu'>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#">Iniciar Sesión</a></li>
+                    <li><button class="nav__button-primary">Registrate</button></li>
+                </ul>
+            </div>
         </nav>
 
         <header class="header" id="acerca">
@@ -44,7 +56,7 @@
         <main class="main-section" id="caracteristicas">
             <h2>Características</h2>
             <div class="main-section__content">
-                <div class="main-section__grafico">
+                <div class="main-section__content-grafico">
                     <svg width="318" height="165" xmlns="http://www.w3.org/2000/svg">
                         <g class="bar-graph" fill-rule="evenodd">
                             <path class="a-bar" fill="#EE9480" d="M10.949 53h34.778v108H10.949zM63.613 0h34.778v161H63.613zM116.276 32h34.778v129h-34.778z"/>
@@ -53,7 +65,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="main-section__text">
+                <div class="main-section__content-text">
                     <h3>Estadisticas de Progreso</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt odit corrupti recusandae facilis quo, molestias dicta et laborum enim provident exercitationem eos nihil eveniet.</p>
                 </div>
@@ -61,8 +73,10 @@
         </main>
 
         <section class="form" id="precios">
-            <h3>Precios</h3>
+            <h2>Precios</h2>
             <div class="form__cards container">
+                <di class="row">
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                           <h4 class="card-title">Trekk-in Free</h4>
@@ -76,28 +90,34 @@
                             <button>Obtén Free</button>                        
                         </div>
                     </div>
-
+                </div>
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                           <h4 class="card-title">Trekk-in Free</h4>
-                          <h5 class="card-text">$ 0 / mes</h5>
+                          <h5 class="card-text">$ 3500 / mes</h5>
                         </div>
                         <ul class="card-lista">
                             <li>Ver mapas creados por usuarios</li>
                             <li>Concretar con otros usuarios</li>
+                            <li>Definir mejores rutas</li>
+                            <li>Mapas Offline</li>
+                            <li>Integración con otras aplicaciones</li>
                         </ul>
                         <div class="card-button">
-                            <button>Obtén Free</button>                        
+                            <button>Obtén Premium</button>                        
                         </div>
-                    </div>               
+                    </div>
+                </div>  
+                </di>             
             </div>
         </section>
 
         <footer class="copyright">
             <ul>
-                <li>Legal</li>
-                <li>Cookies</li>
-                <li>Sobre anuncios</li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Sobre anuncios</a></li>
             </ul>
             <p>© 2018 Trekk-in SPA.</p>
         </footer>

@@ -4,6 +4,10 @@
         margin: 50px 90px 0;
         width: 30%;
         position: absolute;
+        h1 {
+            font-weight: $bold;
+            font-size: $xxx-large;
+        }
         p {
             font-family: $open-sans;
             font-size: $x-small;
@@ -19,12 +23,35 @@
     .header {
         &__texto {
             width: 45%;
-            position: static;
         }
     }
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 764px) {
+    .header {
+        &__texto {
+            position: static;  
+            p {
+                font-size: $small;
+            }      
+        }
+    }
+}
 
+@media (max-width: 500px) {
+    .header {
+        &__texto {
+            margin: 50px 50px 0;
+            width: 80%;
+            h1 {
+                font-weight: $bold;
+                font-size: $xxxx-large;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: $large;
+            }
+        }
+    }
 }
