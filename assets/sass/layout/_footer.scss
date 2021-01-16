@@ -15,7 +15,10 @@
         }
         a {
             color: $lavender-gray;
-
+            transition: all .5s;
+        }
+        a:hover {
+            color: $blue-lagoon;
         }
     }
     p {

@@ -10,7 +10,9 @@ $(function(){
             });
         }
     });
-
-
-
+        /* Intento fallido de animacion de menu hamburguesa
+        $("#slide_nav_button").click(function(){
+            $('#slide_menu').animate({width:'toggle'},300);
+        });
+    */
 });

@@ -2,6 +2,7 @@ button {
     background-color: $ball-blue;
     color: $white;
     border: none;
+    transition: all 1s;
 }
 
 button:hover {
@@ -12,3 +13,4 @@ button:focus {
     background-color: $silver-chalice;
     outline: none;
 }
+

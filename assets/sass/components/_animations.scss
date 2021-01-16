@@ -1,0 +1,45 @@
+// Animación Gráfico
+
+@keyframes opacidad {
+    0% { opacity: 0;}
+    50% { opacity: 100%;}
+    100% { opacity: 0;}
+}
+
+.rojo {
+    animation: opacidad;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes opacidad2 {
+    0% { opacity: 100%;}
+    50% { opacity: 0;}
+    100% { opacity: 100%;}
+}
+
+.azul {
+    animation: opacidad2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0;}
+    100% { opacity: 100%;}
+}
+nav {
+    animation:aparecer 1s ease-in .5s 1 forwards;
+}
+header {
+    animation:aparecer 1.5s ease-in .5s 1 forwards;
+}
+main{
+    animation:aparecer 2s ease-in .5s 1 forwards;
+}
+section {
+    animation:aparecer 2.5s ease-in .5s 1 forwards;
+}
+

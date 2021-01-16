@@ -10005,7 +10005,7 @@ body {
 
 @media (max-width: 900px) {
   .main-section {
-    margin: 0 40px 0;
+    margin: 0;
   }
 }
 @media (max-width: 764px) {
@@ -10018,8 +10018,11 @@ body {
     text-align: center;
   }
   .main-section__content div {
-    width: 80%;
+    width: 70%;
     margin: 40px auto;
+  }
+  .main-section__content div svg {
+    max-width: 100%;
   }
   .main-section__content h3 {
     font-size: 20px;
@@ -10049,6 +10052,10 @@ body {
 }
 .copyright ul a {
   color: #C7C8CC;
+  transition: all 0.5s;
+}
+.copyright ul a:hover {
+  color: #B1E4EB;
 }
 .copyright p {
   margin-right: 90px;
@@ -10106,6 +10113,7 @@ button {
   background-color: #2AB7CA;
   color: #FFF;
   border: none;
+  transition: all 1s;
 }
 
 button:hover {
@@ -10115,6 +10123,66 @@ button:hover {
 button:focus {
   background-color: #AEACAF;
   outline: none;
+}
+
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.rojo {
+  animation: opacidad;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes opacidad2 {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.azul {
+  animation: opacidad2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+nav {
+  animation: aparecer 1s ease-in 0.5s 1 forwards;
+}
+
+header {
+  animation: aparecer 1.5s ease-in 0.5s 1 forwards;
+}
+
+main {
+  animation: aparecer 2s ease-in 0.5s 1 forwards;
+}
+
+section {
+  animation: aparecer 2.5s ease-in 0.5s 1 forwards;
 }
 
 .nav {
@@ -10139,11 +10207,23 @@ button:focus {
 }
 .nav__info li {
   margin-right: 13px;
+  transition: all 0.5s;
+  border-bottom: 1px solid #FFF;
+}
+.nav__info li:hover {
+  border-bottom: 1px solid #F4BAAE;
 }
 .nav__button {
   display: flex;
   align-items: center;
   margin-top: 13px;
+}
+.nav__button a {
+  transition: all 0.5s;
+  border-bottom: 1px solid #FFF;
+}
+.nav__button a:hover {
+  border-bottom: 1px solid #F4BAAE;
 }
 .nav__button button {
   margin-left: 15px;
@@ -10156,6 +10236,31 @@ button:focus {
   display: none;
 }
 
+@media (max-width: 900px) {
+  .nav ul {
+    display: none;
+  }
+  .nav__button {
+    display: none;
+  }
+  .nav__menu {
+    display: block;
+    position: relative;
+  }
+  .nav__menu-hamb {
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .nav__menu ul {
+    list-style: none;
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    margin: 10px 45px 0;
+  }
+}
 .card {
   width: 270px;
   margin: 25px auto;

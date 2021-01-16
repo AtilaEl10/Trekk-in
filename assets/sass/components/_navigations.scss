@@ -18,12 +18,24 @@
         }
         li {
             margin-right: 13px;
+            transition: all .5s;
+            border-bottom: 1px solid $white;
+        }
+        li:hover {
+            border-bottom: 1px solid $melon;
         }
     }
     &__button {
         display: flex;
         align-items: center;
         margin-top: 13px;
+        a {
+            transition: all .5s;
+            border-bottom: 1px solid $white;
+        }
+        a:hover {
+            border-bottom: 1px solid $melon;
+        }
         button {
             margin-left: 15px;
         }
@@ -40,5 +52,31 @@
 
 
 @media (max-width: 900px) {
+    .nav {
+        ul {
+            display: none;
+        }
+        &__button {
+            display: none;
+        }
+        &__menu {
+            display: block;
+            position: relative;
+            &-hamb {
+                font-size: $xx-large;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            ul {
+                list-style: none;
+            }
 
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        margin: 10px 45px 0;
+    }
 }
